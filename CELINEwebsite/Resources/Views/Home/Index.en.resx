@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About Celine Innovation" xml:space="preserve">
+    <value>&lt;/&gt; CELINE</value>
+  </data>
+  <data name="Agile Approach" xml:space="preserve">
+    <value>Agile Approach</value>
+  </data>
+  <data name="AI cloud solutions, scalable systems for growth" xml:space="preserve">
+    <value>AI cloud solutions, scalable systems for growth</value>
+  </data>
+  <data name="At Celine, we craft custom software solutions, leveraging cutting-edge technology to transform your ideas into powerful digital experiences" xml:space="preserve">
+    <value>At Celine, we craft custom software solutions, leveraging cutting-edge technology to transform your ideas into powerful digital experiences</value>
+  </data>
+  <data name="Bespoke Development" xml:space="preserve">
+    <value>Bespoke Development</value>
+  </data>
+  <data name="Celine Innovation Tech Solutions specializes in bespoke development, offering end-to-end support with a focus on agility, quality, and client satisfaction" xml:space="preserve">
+    <value>Celine Innovation Tech Solutions specializes in bespoke development, offering end-to-end support with a focus on agility, quality, and client satisfaction</value>
+  </data>
+  <data name="Custom-built software designed to enhance your organization’s efficiency" xml:space="preserve">
+    <value>Custom-built software designed to enhance your organization’s efficiency</value>
+  </data>
+  <data name="Discover how our digital solutions can make a difference in your project" xml:space="preserve">
+    <value>Discover how our digital solutions can make a difference in your project</value>
+  </data>
+  <data name="Don’t let your ideas stay trapped on paper—turn them into effective software with CELINE" xml:space="preserve">
+    <value>Don’t let your ideas stay trapped on paper—turn them into effective software with CELINE</value>
+  </data>
+  <data name="End-to-End Support" xml:space="preserve">
+    <value>End-to-End Support</value>
+  </data>
+  <data name="Every client deserves a tailored system, and that’s exactly what we deliver" xml:space="preserve">
+    <value>Every client deserves a tailored system, and that’s exactly what we deliver</value>
+  </data>
+  <data name="Explore" xml:space="preserve">
+    <value>Explore</value>
+  </data>
+  <data name="From ideas to execution: We provide the best technological solutions" xml:space="preserve">
+    <value>From ideas to execution: We provide the best technological solutions</value>
+  </data>
+  <data name="Innovate" xml:space="preserve">
+    <value>Innovate</value>
+  </data>
+  <data name="Innovate with us" xml:space="preserve">
+    <value>Innovate with us</value>
+  </data>
+  <data name="Our technology is designed to keep you ahead of the competition" xml:space="preserve">
+    <value>Our technology is designed to keep you ahead of the competition</value>
+  </data>
+  <data name="Projects Completed" xml:space="preserve">
+    <value>Projects Completed</value>
+  </data>
+  <data name="Share your idea" xml:space="preserve">
+    <value>Share your idea</value>
+    <comment>Share your idea</comment>
+  </data>
+  <data name="Smart solutions to accelerate your business growth in the digital world" xml:space="preserve">
+    <value>Smart solutions to accelerate your business growth in the digital world</value>
+  </data>
+  <data name="Software built on the latest technologies, meeting all your requirements with high precision" xml:space="preserve">
+    <value>Software built on the latest technologies, meeting all your requirements with high precision</value>
+  </data>
+  <data name="Team Members" xml:space="preserve">
+    <value>Team Members</value>
+  </data>
+  <data name="We design customized software tailored to your business needs with precision and professionalism" xml:space="preserve">
+    <value>We design customized software tailored to your business needs with precision and professionalism</value>
+  </data>
+  <data name="We develop tech solutions that simplify your operations and boost productivity" xml:space="preserve">
+    <value>We develop tech solutions that simplify your operations and boost productivity</value>
+  </data>
+  <data name="We don’t offer generic services—we create a unique digital experience for you" xml:space="preserve">
+    <value>We don’t offer generic services—we create a unique digital experience for you</value>
+  </data>
+  <data name="Celine Innovation Tech Solutions transformed our ideas into reality with their bespoke software development. Their agile approach and quality-driven service exceeded our expectations" xml:space="preserve">
+    <value>Celine Innovation Tech Solutions transformed our ideas into reality with their bespoke software development. Their agile approach and quality-driven service exceeded our expectations</value>
+  </data>
+  <data name="Mariah Asher" xml:space="preserve">
+    <value>Mariah Asher</value>
+  </data>
+  <data name="Cutting Edge Tech" xml:space="preserve">
+    <value>Cutting Edge Tech</value>
+  </data>
+  <data name="Innovative Solutions" xml:space="preserve">
+    <value>Innovative Solutions</value>
+  </data>
+  <data name="Celine Innovative Tech Solutions for Your Business" xml:space="preserve">
+    <value>Celine Innovative Tech Solutions for Your Business</value>
+  </data>
+  <data name="Web and mobile apps, ERP systems crafted" xml:space="preserve">
+    <value>Web and mobile apps, ERP systems crafted</value>
+  </data>
+  <data name="Discover" xml:space="preserve">
+    <value>Discover</value>
+  </data>
+  <data name="Full Support" xml:space="preserve">
+    <value>Full Support</value>
+  </data>
+  <data name="Full-Cycle Technical Support - Always On" xml:space="preserve">
+    <value>Full-Cycle Technical Support - Always On</value>
+  </data>
+  <data name="Transforming Ideas into Reality" xml:space="preserve">
+    <value>Transforming Ideas into Reality</value>
+  </data>
+  <data name="Leverage our technical mastery to bring your most ambitious projects to life with precision and creativity" xml:space="preserve">
+    <value>Leverage our technical mastery to bring your most ambitious projects to life with precision and creativity</value>
+  </data>
+  <data name="Seamless Integration, Exceptional Performance" xml:space="preserve">
+    <value>Seamless Integration, Exceptional Performance</value>
+  </data>
+  <data name="We ensure smooth implementation of our systems with zero downtime, maximizing your operational productivity from day one" xml:space="preserve">
+    <value>We ensure smooth implementation of our systems with zero downtime, maximizing your operational productivity from day one</value>
+  </data>
+  <data name="Future-Proof Solutions for Sustainable Growth" xml:space="preserve">
+    <value>Future-Proof Solutions for Sustainable Growth</value>
+  </data>
+  <data name="Our scalable systems evolve with your business, ensuring long-term success in a dynamic market" xml:space="preserve">
+    <value>Our scalable systems evolve with your business, ensuring long-term success in a dynamic market</value>
+  </data>
+</root>

@@ -1,0 +1,78 @@
+﻿@using System.Globalization
+@{
+    var culture = System.Threading.Thread.CurrentThread.CurrentCulture;
+    var isRTL = culture.TextInfo.IsRightToLeft;
+}
+
+<!DOCTYPE html>
+<html lang="@culture.TwoLetterISOLanguageName" dir="@(isRTL ? "rtl" : "ltr")">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CELINE</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/_Layout.cshtml.css" />
+    <link rel="icon" href="~/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />  
+    <link rel="stylesheet" href="~/css/_Layout.cshtml.css" asp-append-version="true" />  @* إضافة دقة أعلى لتحميل الملفات *@
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> @* إضافة دقة أعلى لتحميل الملفات *@
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+               <!-- الجزء الخاص بالشعار + اللوجو -->
+            <div class="logo">
+                <img src="~/images/logo.png" alt="Company Logo" class="logo-img" />
+                <span class="block-header-logo-text__text">CELINE</span>
+            </div>
+
+  
+                 <!-- القائمة الرئيسية (تكون في المنتصف) -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/">@(isRTL ? "الرئيسية" : "Home")</a></li>
+                    <li><a href="/Contact">@(isRTL ? "إتصل بنا" : "Contact us")</a></li>
+                </ul>
+            </nav>
+
+                   <!-- الجزء الخاص باللغة (يتم محاذاته يمينًا أو يسارًا حسب الاتجاه) -->            <div class="language-switcher">
+                <form asp-controller="Home" asp-action="SetLanguage" method="post">
+                    <input type="hidden" name="returnUrl" value="@Context.Request.Path@Context.Request.QueryString" />
+                    <span>@(isRTL ? "اللغة" : "Language")</span>
+                    <select name="culture" onchange="this.form.submit()">
+                        <option value="en" selected="@(culture.Name == "en")">English</option>
+                        <option value="ar" selected="@(culture.Name == "ar")">العربية</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- التعديل هنا: إضافة الفئة حسب الاتجاه -->
+    <div class="container @(isRTL ? "rtl-content" : "ltr-content")">
+        @RenderBody()
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-sections">
+                    <div class="footer-section">
+                        <h5>@(isRTL ? "CELINE" : "CELINE")</h5>
+                        <p>@(isRTL ? "حلول برمجية مخصصة لإحتياجاتك" : "Custom software solutions tailored to your needs")</p>
+                    </div>
+                    <div class="footer-section">
+                        <h5><a href="/Contact">@(isRTL ? "إتصل بنا" : "Contact us")</a></h5>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>© @DateTime.Now.Year, @(isRTL ? "جميع الحقوق محفوظة" : "all rights reserved")</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,179 @@
+﻿@{
+    Layout = "_Layout";
+}
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+@{
+    ViewData["Title"] = "CELINE - Innovative Tech Solutions";
+}
+
+<!-- Header (جاهز فى _Layout.cshtml) -->
+
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h1>@Localizer["Celine Innovative Tech Solutions for Your Business"]</h1>
+        <p>@Localizer["Our technology is designed to keep you ahead of the competition"]</p>
+        <a href="#services" class="btn btn-primary">@Localizer["Discover"]</a>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services">
+    <div class="container">
+        <div class="service">
+            <h3>@Localizer["Transforming Ideas into Reality"]</h3>
+            <p>@Localizer["Leverage our technical mastery to bring your most ambitious projects to life with precision and creativity"]</p>
+        </div>
+        <div class="service">
+            <h3>@Localizer["Seamless Integration, Exceptional Performance"]</h3>
+            <p>@Localizer["We ensure smooth implementation of our systems with zero downtime, maximizing your operational productivity from day one"]</p>
+        </div>
+        <div class="service">
+            <h3>@Localizer["Future-Proof Solutions for Sustainable Growth"]</h3>
+            <p>@Localizer["Our scalable systems evolve with your business, ensuring long-term success in a dynamic market"]</p>
+        </div>
+    </div>
+</section>
+
+<!-- ... الأقسام الحالية حتى نهاية  ... -->
+<!-- Innovation Section -->
+<section class="innovation-section">
+    <div class="container">
+        <div class="innovation-wrapper">
+            <div class="innovation-text">
+                <h1>@Localizer["Innovate with us"]</h1>
+                <p>@Localizer["At Celine, we craft custom software solutions, leveraging cutting-edge technology to transform your ideas into powerful digital experiences"]</p>
+                <a href="/Contact" class="btn btn-primary">@Localizer["Share your idea"]</a>
+            </div>
+            <div class="innovation-image">
+                <img src="/images/img12-small.jpg"
+                     srcset="/images/img12-small.jpg 480w, /images/img12.jpg 1024w"
+                     sizes="(max-width: 600px) 480px, 800px"
+                     alt="Celine Innovation" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Expertise Section -->
+<section class="expertise-section">
+    <div class="container">
+        <div class="expertise-wrapper">
+            <div class="expertise-image">
+                <img src="/images/img8-small.jpg"
+                     srcset="/images/img8-small.jpg 480w, /images/img8.jpg 1024w"
+                     sizes="(max-width: 600px) 480px, 800px"
+                     alt="Web Application Design" class="img-fluid">
+            </div>
+            <div class="expertise-content">
+                <h1>@Localizer["About Celine Innovation"] </h1>
+                <p>@Localizer["Celine Innovation Tech Solutions specializes in bespoke development, offering end-to-end support with a focus on agility, quality, and client satisfaction"]</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Solutions Section -->
+<section class="solutions-section">
+    <div class="container">
+        <h1>@Localizer["Innovative Solutions"]</h1>
+        <p class="intro">
+            @Localizer["We design customized software tailored to your business needs with precision and professionalism"]</p>
+
+        <div class="solution-items">
+            <div class="solution-item">
+                <img src="/images/img3-small.jpg"
+                     srcset="/images/img3-small.jpg 480w, /images/img3.jpg 1024w"
+                     sizes="(max-width: 600px) 480px, 350px"
+                     alt="Bespoke Development" class="solution-icon">
+                <h3>@Localizer["End-to-End Support"]</h3>
+                <p>@Localizer["AI cloud solutions, scalable systems for growth"]</p>
+            </div>
+            <div class="solution-item">
+                <img src="/images/img4-small.jpg"
+                     srcset="/images/img4-small.jpg 480w, /images/img4.jpg 1024w"
+                     sizes="(max-width: 600px) 480px, 350px"
+                     alt="End-to-End Support" class="solution-icon">
+                <h3>@Localizer["Bespoke Development"]</h3>
+                <p>@Localizer["From ideas to execution: We provide the best technological solutions"]</p>
+            </div>
+            <div class="solution-item">
+                <img src="/images/img5-small.jpg"
+                     srcset="/images/img5-small.jpg 480w, /images/img5.jpg 1024w"
+                     sizes="(max-width: 600px) 480px, 350px"
+                     alt="Cutting Edge Tech" class="solution-icon">
+                <h3>@Localizer["Cutting Edge Tech"]</h3>
+                <p>@Localizer["Software built on the latest technologies, meeting all your requirements with high precision"]</p>
+            </div>
+            <div class="solution-item">
+                <img src="/images/img6-small.jpg"
+                     srcset="/images/img6-small.jpg 480w, /images/img6.jpg 1024w"
+                     sizes="(max-width: 600px) 480px, 350px"
+                     alt="Agile Approach" class="solution-icon">
+                <h3>@Localizer["Agile Approach"]</h3>
+                <p>@Localizer["We develop tech solutions that simplify your operations and boost productivity"]</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Tech Solutions Section -->
+<section class="tech-solutions-section">
+    <div class="container">
+        <h1>@Localizer["Innovate"]</h1>
+        <p class="subtitle">@Localizer["Smart solutions to accelerate your business growth in the digital world"]</p>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="number">150+</div>
+                <div class="label">@Localizer["Projects Completed"]</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">50+</div>
+                <div class="label">@Localizer["Team Members"]</div>
+            </div>
+        </div>
+
+        
+    </div>
+</section>
+
+<!-- ... بقية الأقسام الحالية ... -->
+
+<!-- About Section -->
+<section class="about">
+    <div class="container">
+        <h2>@Localizer["About Celine Innovation"]</h2>
+        <p>@Localizer["Celine Innovation Tech Solutions specializes in bespoke development, offering end-to-end support with a focus on agility, quality, and client satisfaction"]</p>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+    <div class="container">
+        <div class="stars">★★★★★</div>
+        <blockquote>
+            @Localizer["Celine Innovation Tech Solutions transformed our ideas into reality with their bespoke software development. Their agile approach and quality-driven service exceeded our expectations"]
+        </blockquote>
+        <p class="author">@Localizer["Mariah Asher"]</p>
+    </div>
+</section>
+
+<!-- Footer (جاهز فى _Layout.cshtml) -->
+
+
+
+@section Scripts {
+    <script>
+        // Set the selected language in the dropdown
+        document.addEventListener('DOMContentLoaded', function() {
+            const cultureCookie = document.cookie.split('; ').find(row => row.startsWith('.AspNetCore.Culture='));
+            if (cultureCookie) {
+                const culture = cultureCookie.split('=')[1].split('|')[0].split('=')[1];
+                document.querySelector('select[name="culture"]').value = culture;
+            }
+        });
+    </script>
+}

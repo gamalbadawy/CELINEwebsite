@@ -1,0 +1,108 @@
+﻿@{
+    Layout = "_Layout";
+}
+@model CELINEwebsite.Models.ContactFormModel
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = "Contact us";
+}
+
+<!-- Header (جاهز فى _Layout.cshtml) -->
+<!-- Contact Form Section -->
+<section class="contact-form">
+    <div class="container">
+        <h1>@Localizer["Contact us"]</h1>
+
+        @if (TempData["Message"] != null)
+        {
+            <div class="alert alert-success">
+                <i class="fas fa-check-circle"></i> @TempData["Message"]
+            </div>
+        }
+
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger">
+                <i class="fas fa-exclamation-circle"></i> @TempData["ErrorMessage"]
+            </div>
+        }
+
+        <form asp-action="Index" method="post" class="mt-4">
+            <div class="form-group">
+                <label asp-for="Name" class="font-weight-bold">@Localizer["Your Name"]</label>
+                <input asp-for="Name" class="form-control" placeholder="@Localizer["Enter your name"]" />
+                <span asp-validation-for="Name" class="text-danger small"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email" class="font-weight-bold">@Localizer["Your Email"]</label>
+                <input asp-for="Email" class="form-control" placeholder="@Localizer["Enter your email"]" />
+                <span asp-validation-for="Email" class="text-danger small"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Message" class="font-weight-bold">@Localizer["Your Message"]</label>
+                <textarea asp-for="Message" class="form-control" rows="5" placeholder="@Localizer["Type your message here..."]"></textarea>
+                <span asp-validation-for="Message" class="text-danger small"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+                <i class="fas fa-paper-plane"></i> @Localizer["Send Message"]
+            </button>
+        </form>
+    </div>
+</section>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // تحقق إذا كانت الصفحة باللغة العربية (RTL)
+            const isRTL = document.documentElement.dir === 'rtl';
+
+            if (isRTL) {
+                // قاموس الترجمة للرسائل
+                const translations = {
+                    'The Name field is required': 'حقل الاسم مطلوب',
+                    'The Email field is required': 'حقل البريد الإلكتروني مطلوب',
+                    'The Message field is required': 'حقل الرسالة مطلوب',
+                    'The Email field is not a valid e-mail address': 'البريد الإلكتروني غير صالح'
+                };
+
+                // ترجمة جميع رسائل التحقق
+                document.querySelectorAll('.field-validation-error').forEach(el => {
+                    const originalText = el.textContent.trim();
+                    if (translations[originalText]) {
+                        el.textContent = translations[originalText];
+                    }
+                });
+
+                // ترجمة نصوص Placeholder (اختياري)
+                document.querySelector('#Name')?.setAttribute('placeholder', 'أدخل اسمك');
+                document.querySelector('#Email')?.setAttribute('placeholder', 'أدخل بريدك الإلكتروني');
+                document.querySelector('#Message')?.setAttribute('placeholder', 'اكتب رسالتك هنا...');
+            }
+        });
+
+        // حل إضافي لترجمة الرسائل الديناميكية التي تظهر بعد الإرسال
+        $(document).ajaxComplete(function() {
+            const isRTL = document.documentElement.dir === 'rtl';
+            if (isRTL) {
+                const translations = {
+                    'The Name field is required': 'حقل الاسم مطلوب',
+                    'The Email field is required': 'حقل البريد الإلكتروني مطلوب',
+                    'The Message field is required': 'حقل الرسالة مطلوب'
+                };
+
+                $('.field-validation-error').each(function() {
+                    const originalText = $(this).text().trim();
+                    if (translations[originalText]) {
+                        $(this).text(translations[originalText]);
+                    }
+                });
+            }
+        });
+    </script>
+}
